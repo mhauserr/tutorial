@@ -29,9 +29,9 @@ build:
                 echo "from location $(which ruby)"
                 echo -p "gem list: $(gem list)"
 
-        -script:
-           name: setup db
-           code: rake db:create && rake db:migrate
+        - script:
+            name: setup db
+            code: "rake db:create && rake db:migrate"
         # Add more steps here:
         - script:
                name: rspec
