@@ -15,10 +15,10 @@ build:
 
         # A step that executes `bundle install` command
         - bundle-install
-        - rake db:create && rake db:migrate
+        #- rake db:create && rake db:migrate
 
         # A step that prepares the database.yml using the database in services
-        # - rails-database-yml
+        - rails-database-yml
 
         # A custom script step, name value is used in the UI
         # and the code value contains the command that get executed
